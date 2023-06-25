@@ -95,7 +95,6 @@ You can find the Dockerfile in docker dir of the project.
 The Dockerized Nginx uses HTML page with some CSS and the JS script for getting the data from the file.
 The file is being filled with data using the python script which performs API call and writes the data into the file.
 For executing script with some period, i implemented the cronjob which executes python script inside the container each hour.
----
 
 
 ### Using
@@ -116,7 +115,7 @@ ansible-playbook -i ansible_inventory --ssh-extra-args '-F ssh_proxy_conf' deplo
 ```
 
  The infra is ready, the app is deployed, the user is created
-
+---
 
 
 
