@@ -1,6 +1,10 @@
 <h1 align="center">OVERSECURED TEST TASK</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 
+### Link to the page
+
+http://ovsectest-external-lb-1464192628.eu-central-1.elb.amazonaws.com/currency
+
 ### Introduction
 Hi there, for the task i was provided with i decided to use the most popular DevOps tools:
 - Terraform
