@@ -1,0 +1,10 @@
+---
+- hosts: web-servers
+  roles:
+    - docker-spray
+  become: true
+
+- hosts: web-servers
+  roles:
+    - deploy
+

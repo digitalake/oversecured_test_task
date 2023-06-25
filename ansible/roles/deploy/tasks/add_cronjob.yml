@@ -1,0 +1,7 @@
+---
+- name: Add cron job for Docker container.
+  cron:
+    name: "Execute Python script"
+    minute: "0"
+    hour: "*"
+    job: "docker exec {{ container_name }} python3 /usr/local/bin/data_receiver.py"

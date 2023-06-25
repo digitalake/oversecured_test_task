@@ -1,0 +1,5 @@
+---
+DOCKER_HUB_USER: ivanopulo
+DOCKER_HUB_PASSWORD: <password>
+DOCKER_HUB_IMAGE: ivanopulo/personal:nginx-currency-6.0
+container_name: nginx-currency

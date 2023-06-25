@@ -1,0 +1,12 @@
+Host ovsectest-bastion
+  HostName  52.59.212.202
+  IdentityFile /home/yakimoro/.ssh/oversecured_test
+  User ubuntu
+  StrictHostKeyChecking no
+
+Host ovsectest-nginx_server
+  HostName 10.0.0.231
+  IdentityFile /home/yakimoro/.ssh/oversecured_test
+  User ubuntu
+  ProxyJump ovsectest-bastion
+  StrictHostKeyChecking no

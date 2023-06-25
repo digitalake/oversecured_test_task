@@ -1,0 +1,17 @@
+---
+- include_tasks: docker_login.yml
+
+- name: Pull Docker image
+  docker_image:
+    name: "{{ DOCKER_HUB_IMAGE }}"
+    source: pull
+
+- name: Start Docker container.
+  docker_container:
+    name: "{{ container_name }}"
+    image: "{{ DOCKER_HUB_IMAGE }}"
+    state: started
+    published_ports:
+      - "80:80"
+
+- include_tasks: add_cronjob.yml 
